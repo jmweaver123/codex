@@ -10,20 +10,15 @@ body {
   color: #1f2937;
 }
 
-.page {
-  max-width: 900px;
-  margin: 24px auto 40px;
+main {
   background: #f9fafb;
-  border-radius: 18px;
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
-  overflow: hidden;
 }
 
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 36px;
+  padding: 20px 80px;
   font-size: 13px;
   background: #f9fafb;
 }
@@ -94,7 +89,7 @@ button.ghost {
 
 .hero {
   position: relative;
-  padding: 80px 40px 120px;
+  padding: 90px 80px 140px;
   text-align: center;
   background: radial-gradient(circle at top, #fdfdfd 0%, #f4f5f8 55%, #f3f4f6 100%);
 }
@@ -158,14 +153,14 @@ button.ghost {
 }
 
 .float-card.left {
-  left: 30px;
-  top: 130px;
+  left: 70px;
+  top: 140px;
   transform: rotate(-6deg);
 }
 
 .float-card.right {
-  right: 40px;
-  top: 120px;
+  right: 90px;
+  top: 130px;
   transform: rotate(5deg);
 }
 
@@ -206,14 +201,14 @@ button.ghost {
 .logos {
   display: flex;
   justify-content: space-around;
-  padding: 18px 40px 30px;
+  padding: 22px 80px 36px;
   font-size: 13px;
   color: #c7cbd3;
   text-transform: lowercase;
 }
 
 .features {
-  padding: 40px 40px 60px;
+  padding: 50px 80px 70px;
   background: #f9fafb;
 }
 
@@ -317,7 +312,7 @@ button.ghost {
 }
 
 .efficiency {
-  padding: 50px 40px 60px;
+  padding: 60px 80px 70px;
   text-align: center;
   background: #f7f8fb;
 }
@@ -375,7 +370,7 @@ button.ghost {
 }
 
 .workflow {
-  padding: 40px;
+  padding: 50px 80px;
 }
 
 .workflow-card {
@@ -407,7 +402,7 @@ button.ghost {
 }
 
 .testimonials {
-  padding: 40px;
+  padding: 50px 80px;
 }
 
 .testimonials .faces span {
@@ -461,7 +456,7 @@ button.ghost {
 }
 
 .news {
-  padding: 40px;
+  padding: 50px 80px;
   background: #f9fafb;
 }
 
@@ -505,7 +500,7 @@ button.ghost {
 }
 
 .faq {
-  padding: 40px;
+  padding: 50px 80px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -542,10 +537,10 @@ button.ghost {
 .faq-list div:last-child { border-bottom: none; }
 
 .cta {
-  margin: 30px 40px 50px;
+  margin: 30px 80px 60px;
   background: #f3f4f6;
   border-radius: 20px;
-  padding: 30px;
+  padding: 36px;
   text-align: center;
 }
 
@@ -566,7 +561,7 @@ footer {
   display: grid;
   grid-template-columns: 1.2fr 2fr 1fr;
   gap: 30px;
-  padding: 40px;
+  padding: 50px 80px;
 }
 
 footer .brand-name { color: #fff; }
@@ -611,9 +606,18 @@ footer .pill {
 }
 
 @media (max-width: 900px) {
-  .page {
-    margin: 0;
-    border-radius: 0;
+  .top-nav,
+  .hero,
+  .logos,
+  .features,
+  .efficiency,
+  .workflow,
+  .testimonials,
+  .news,
+  .faq,
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .nav-links {
@@ -636,7 +640,19 @@ footer .pill {
     flex-direction: column;
   }
 
+  .cta {
+    margin: 30px 24px 50px;
+  }
+
   footer {
     grid-template-columns: 1fr;
+  }
+
+  .float-card.left {
+    left: 16px;
+  }
+
+  .float-card.right {
+    right: 16px;
   }
 }
